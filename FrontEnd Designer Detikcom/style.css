@@ -1,0 +1,327 @@
+:root {
+--primary: #000000;
+--bg: rgba(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body {  
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #0a0909;
+    min-height: 5000px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 10px 60px;
+    background-color: rgba(250, 243, 243, 0.8);
+    border-bottom: 1px solid #fffbfb;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 50px;
+    right: 0;
+    z-index: 9999;
+    border-radius: 50px;
+    width: 90%;
+}
+
+.navbar .navbar-nav a{
+    color: #000000;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    padding: 1.3rem 10px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.hero {
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/sudirmanrun.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.fun .row {
+    display: flex;
+    padding: 0px 25px;
+    
+}
+
+.fun .row .about-img2 {
+    flex: 1 1 45rem;
+}
+
+.fun .row .about-img2 {
+    width: 100%;
+}
+
+.fun .row .content {
+    flex: 1 1 45rem;
+}
+
+.halaman .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Menengahkan vertikal */
+    align-items: center; /* Menengahkan horizontal */
+    padding: 3px 7%;
+    max-width: 100rem;
+}
+
+.halaman .content h2 {
+    margin-top: 3.1rem;
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 2.1rem;
+    color: #fff;
+    background-color: #ff9100;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.sponsor .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Menengahkan vertikal */
+    align-items: center; /* Menengahkan horizontal */
+    padding: 10px 20%;
+    max-width: 100rem;
+}
+
+
+.sponsor .content h2 {
+    margin-top: 4.1rem;
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 2.1rem;
+    color: #fff;
+    background-color: rgb(49, 217, 230);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+
+}
+
+/*---slide--*/
+
+
+
+.main {
+    width: 230vh;
+    top: 50%;
+    left: 50%;
+    margin-top: 15.1rem;
+    transform: translate(-2%, -50%);
+    overflow: hidden;
+    border: 50px solid rgb(49, 217, 230);
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .wrap {
+    display: flex;
+    animation: slide 10s infinite;
+    }
+    
+    .wrap img {
+    width: 100%;
+    }
+    
+    @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-300% );
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-200);
+    }
+    90% {
+        transform: translateX(-100);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+
+/*---dokumentasi sudirman 2022---*/
+
+.dokumentasi {
+    text-align: center; /* Pusatkan teks */
+    padding: 50px 20px; /* Atur padding agar tampilan lebih lega */
+}
+
+.sub-title {
+    color: #000000; /* Warna teks sub-judul */
+}
+
+.activity-list {
+    display: flex;
+    justify-content: space-between; /* Susun item sejajar ke kiri kanan */
+    margin-top: 20px; /* Beri margin atas */
+}
+
+.activity1 {
+    padding-left: 130px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.activity-2 {
+    width: calc(19% - 17px); /* Menetapkan lebar setiap item sesuai keinginan */
+    margin: 15px; /* Menetapkan margin pada setiap item */
+    border-radius: 8px; /* Menambahkan sudut lengkung pada item galeri */
+    overflow: hidden; /* Mengatasi overflow */
+}
+
+.activity-2 img {
+    width: 100%; /* Membuat gambar mengisi lebar 100% dari kontainer */
+    height: auto; /* Biarkan tinggi otomatis agar proporsi gambar tetap terjaga */
+    display: block; /* Mengatasi whitespace pada bagian bawah gambar */
+}
+
+
+
+
+/*----Dokumentasi Artikel Terkait----*/
+
+.artikel {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sub-titl {
+    margin-left: 50px;
+    margin-top: 4.1rem;
+    
+}
+
+.sub-title {
+    margin-top: 3.1rem;
+    margin-left: 40px;
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    background-color: #2ecce0;
+    border-radius: 0.4rem;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.article {
+    width: calc(25.33% - 1px); /* Ubah lebar setiap item menjadi 33.33% untuk 3 item per baris */
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.article:hover img {
+    transform: scale(1.1);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*--*/
+.hero1 {
+    min-height: 250vh;
+    margin-top: -150vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/BgGedung1.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+
+}
+
+.hero2 {
+    min-height: 50vh;
+    margin-top: -0vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/BgTextIcon2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+
+}
+
+.text-container {
+    text-align: center;
+    position: absolute;
+    top: 4400px; /* Sesuaikan dengan tinggi yang diinginkan */
+    left: 43%;
+    
+    
+}
+
+.text-container h1 {
+    font-size: 1.3rem; /* Ukuran font sesuaikan dengan kebutuhan */
+    color: #ffffff;
+    padding: 20px 40px;
+    background-color: #ff9100;
+    border-radius: 2.1rem;
+    margin-top: 1%;
+    
+}
